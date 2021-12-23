@@ -58,11 +58,11 @@
         })
     }
 
-    function searchLevelGT() {
+    function searchLevelGTE() {
       let level = parseInt($("#level").val());
       let TestDataClass = ncmb.DataStore(db);
       TestDataClass
-        .greaterThan("level", level)
+        .greaterThanOrEqualTo("level", level)
         .fetchAll()
         .then(function(results) {
           showResults(results);
@@ -104,7 +104,7 @@
     <br>
     <button class="btn" onclick="searchLevelLTE()">Level &lt</button>
     <button class="btn" onclick="searchLevel()">Level</button>
-    <button class="btn" onclick="searchLevelGT()">Level &gt</button>
+    <button class="btn" onclick="searchLevelGTE()">Level &gt</button>
   </div>
   <div id="message">message area</div>
 </body>
