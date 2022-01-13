@@ -21,7 +21,7 @@ input {
   text-align: center;
 }
 
-.btn {
+.btn1 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 16pt;
@@ -30,6 +30,17 @@ input {
   border-radius: 10px;
   color: white;
   background-color: blue;
+}
+
+.btn2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16pt;
+  height: 4ex;
+  width: 5em;
+  border-radius: 10px;
+  color: white;
+  background-color: hotpink;
 }
 
 #message {
